@@ -1,0 +1,42 @@
+{
+  "name": "sails-firebirdsql",
+  "version": "0.10.0",
+  "description": "Firebird adapter for Sails / Waterline",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test/integration/runner -R spec -b"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/paseek/sails-firebirdsql.git"
+  },
+  "keywords": [
+    "firebird",
+    "adapter",
+    "sails",
+    "waterline",
+    "orm",
+    "sailsjs",
+    "sails.js"
+  ],
+  "author": "Sergey Pronyakin <s.pronyakin@gmail.com>",
+  "license": "MIT",
+  "readmeFilename": "README.md",
+  "dependencies": {
+    "node-firebird": "*"
+  },
+  "devDependencies": {
+    "waterline-adapter-tests": "git://github.com/balderdashy/waterline-adapter-tests.git#associations",
+    "mocha": "*",
+    "root-require": "~0.2.0",
+    "captains-log": "~0.10.6"
+  },
+  "sailsAdapter": {
+    "sailsVersion": "~0.10.0",
+    "implements": [
+      "semantic",
+      "queryable",
+      "associations"
+    ]
+  }
+}
