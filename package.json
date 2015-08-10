@@ -23,10 +23,15 @@
   "license": "MIT",
   "readmeFilename": "README.md",
   "dependencies": {
-    "node-firebird": "*"
+    "async": "*",
+    "lodash": "*",
+    "node-firebird": "*",
+    "waterline-errors": "*",
+    "waterline-sequel": "*",
+    "waterline-cursor": "*"
   },
   "devDependencies": {
-    "waterline-adapter-tests": "git://github.com/balderdashy/waterline-adapter-tests.git#associations",
+    "waterline-adapter-tests": "*",
     "mocha": "*",
     "root-require": "~0.2.0",
     "captains-log": "~0.10.6"
