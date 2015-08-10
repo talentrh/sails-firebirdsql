@@ -5,6 +5,8 @@ var util = require('util');
 var mocha = require('mocha');
 var log = new (require('captains-log'))();
 
+var Firebird = require('node-firebird');
+
 
 var TestRunner = require('waterline-adapter-tests');
 var Adapter = require('../../');
@@ -36,11 +38,17 @@ log.info('Running `waterline-adapter-tests` against ' + interfaces.length + ' in
 log.info('( ' + interfaces.join(', ') + ' )');
 console.log();
 log('Latest draft of Waterline adapter interface spec:');
-log('https://github.com/balderdashy/sails-docs/blob/master/adapter-specification.md');
+log('https://github.com/balderdashy/sails-docs/blob/master/contributing/adapter-specification.md');
 console.log();
 
 
-
+var config = {
+    host: '127.0.0.1',
+    port: 3050,
+    user: 'SYSDBA',
+    password: 'masterkey',
+    database: process.env.DATABASE
+};
 
 /**
  * Integration Test Runner
@@ -55,9 +63,7 @@ new TestRunner({
     adapter: Adapter,
 
     // Default adapter config to use.
-    config: {
-        schema: false
-    },
+    config: config,
 
     // The set of adapter interfaces to test against.
     // (grabbed these from this adapter's package.json file above)
