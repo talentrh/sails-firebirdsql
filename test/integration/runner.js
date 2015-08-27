@@ -59,6 +59,11 @@ var config = {
  */
 new TestRunner({
 
+    mocha: {
+        timeout: false,
+        bail: false
+    },
+
     // Load the adapter module.
     adapter: Adapter,
 

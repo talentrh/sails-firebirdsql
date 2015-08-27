@@ -25,9 +25,9 @@
   "dependencies": {
     "async": "*",
     "lodash": "*",
-    "node-firebird": "*",
+    "node-firebird": "paseek/node-firebird",
     "waterline-errors": "*",
-    "waterline-sequel": "*",
+    "waterline-sequel": "paseek/",
     "waterline-cursor": "*"
   },
   "devDependencies": {
@@ -38,10 +38,13 @@
   },
   "sailsAdapter": {
     "sailsVersion": "~0.10.0",
-    "implements": [
+    "implements1": [
       "semantic",
       "queryable",
       "associations"
+    ],
+    "implements": [
+      "semantic"
     ]
   }
 }
