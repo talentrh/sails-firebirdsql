@@ -27,7 +27,7 @@
     "lodash": "*",
     "node-firebird": "paseek/node-firebird",
     "waterline-errors": "*",
-    "waterline-sequel": "paseek/",
+    "waterline-sequel": "paseek/waterline-sequel",
     "waterline-cursor": "*"
   },
   "devDependencies": {
