@@ -23,9 +23,9 @@
   "license": "MIT",
   "readmeFilename": "README.md",
   "dependencies": {
-    "async": "*",
+    "async": "2.3.0",
     "lodash": "*",
-    "node-firebird": "paseek/node-firebird",
+    "node-firebird": "0.8.1",
     "waterline-errors": "*",
     "waterline-sequel": "paseek/waterline-sequel",
     "waterline-cursor": "*"
